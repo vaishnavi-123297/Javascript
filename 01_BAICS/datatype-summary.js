@@ -27,3 +27,25 @@ console.log(typeof myFunction)//function
 console.log(typeof heros)//object
 console.log(typeof anotherId)//symbol
 console.log(typeof myObj)//object
+
+//****************************************** */
+
+//stack(primitive) and heap(non-primitive)
+let myYoutubename = "Hitesh Chaudhary"
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+console.log(myYoutubename);//Hitesh Chaudhary
+console.log(anothername);//chaiaurcode//we get copy of primitive datatype
+
+
+//here we get reference of non-primitive datatype
+let userOne = {
+    email: "user@google.com",
+    upi: "user@upi"
+
+}
+let userTwo = userOne
+userTwo.email = "hitesha2google.com"
+
+console.log(userOne.email);//hitesha2google.com
+console.log(userTwo.email);//hitesha2google.com
